@@ -4,7 +4,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 const dbConfig: TypeOrmModuleOptions = {
   synchronize: false,
   entities: [__dirname + '/**/*.entity{.ts,.js}'],
-  migrations: [__dirname + '/../migrations/**/*{.ts,.js}'],
+  migrations: [__dirname + '/../migrations/**/*.js'],
 };
 
 switch (process.env.NODE_ENV) {
