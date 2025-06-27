@@ -3,8 +3,8 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 
 const dbConfig: TypeOrmModuleOptions = {
   synchronize: false,
-  entities: [__dirname + '/../**/*.entity{.ts,.js}'],
-  migrations: [__dirname + '/migrations/**/*{.ts,.js}'],
+  entities: [__dirname + '/**/*.entity{.ts,.js}'],
+  migrations: [__dirname + '/../migrations/**/*{.ts,.js}'],
 };
 
 switch (process.env.NODE_ENV) {
